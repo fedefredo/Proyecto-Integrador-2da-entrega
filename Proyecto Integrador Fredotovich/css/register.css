@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Chakra+Petch:ital,wght@0,300;0,500;1,700&family=Kanit:wght@100;200;300;500;700;900&family=Montserrat:ital,wght@0,100;0,300;0,600;1,700&family=Oswald:wght@200;400;700&family=PT+Sans:wght@400;700&family=Poppins:ital,wght@0,100;0,300;1,900&family=Teko:wght@300;600&display=swap');
+
+.register {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-register {
+    margin: 3rem auto;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-register {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+#form {
+    background-color: black;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 390px;
+    height: 100%;
+}
+
+.form-data {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    color: white;
+}
+
+label {
+    color: white;
+    margin-bottom: .5rem;
+}
+
+input, select, textarea {
+   background-color: transparent;
+   border-bottom: 2px solid red;
+   border-right: none;
+   border-top: none;
+   border-left: none;
+   color: white;
+}
+
+button {
+    height: 40px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: dodgerblue;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-data p {
+    text-align: center;
+}
+
+@media screen and (width > 768px) {
+    .user-register {
+        margin: 3rem auto;
+    }
+}

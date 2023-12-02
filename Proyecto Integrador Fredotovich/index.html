@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYPHONE</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="main-header">
+        <a href="/index.html" class="nav-logo-link">
+            <img src="/assets/images/logo-ecommerce.png" alt="Logo Ecommerce" class="nav-logo">
+        </a>
+
+        <div class="user-nav-bar">
+            <div class="user-logo">
+                <i class="fa-solid fa-user logo"></i>
+            </div>
+            <div class="user-data">
+                <div class="user-profile"></div>
+            </div>
+            <div class="buy-logo">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+
+        <input class="input-check" type="checkbox" id="check-menu">
+        <label class="burger-menu" for="check-menu">
+            <span class="burger-line"></span>
+        </label>
+
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav-list" id="nav-list">
+                <li class="nav-item">
+                    <a href="/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/contact/contact.html" class="nav-link">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pages/about-us/about-us.html" class="nav-link">Acerca de</a>
+                </li>
+            </ul>
+            <div class="user-info" id="header-user">
+                <div class="user-action"></div>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <div class="main-banner">
+        <figure class="banner-img-container">
+            <picture>
+                <source class="banner-img" srcset="/assets/images/banner-img.jpg" media="(width > 768px)">
+                <img src="/assets/images/banner-img.jpg" alt="" class="banner-img">
+            </picture>
+        </figure>
+        <div class="banner-info">
+            <h1 class="banner-title">MYPHONE</h1>
+        </div>
+    </div>
+    
+
+    <main class="main-container" id="main-container">
+        <h1 class="title-container">Nuestros productos</h1>
+        <div class="search-filter-box">
+            <div class="search-filter">
+                <button class="btn-search"><i class="fa-solid fa-magnifying-glass search-icon" style="color: #000000;"></i></button>
+                <input type="text" class="search-input" placeholder="Buscar" id="search-product-input">
+            </div>
+            <div id="cantidad-filter" class="cantidad-filter"></div>
+        </div>
+        <div id="container-cards"></div>
+    </main>
+
+    <section class="features-section">
+        <div class="feature">
+            <i class="fa-solid fa-truck"></i>
+            Delivery en 24hrs
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-receipt"></i>
+            Garantía de 1 año
+        </div>
+        <div class="feature">
+            <i class="fa-regular fa-credit-card"></i>
+            Pagá como quieras
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <section class="footer-section">
+            <div class="footer-column">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="https://www.facebook.com/?locale=es_LA" class="footer-list-link">
+                            <i class="fa-brands fa-facebook sites-info"></i>Facebook
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://twitter.com/?lang=es" class="footer-list-link">
+                            <i class="fa-brands fa-twitter sites-info"></i>Twitter
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="https://www.instagram.com/" class="footer-list-link">
+                            <i class="fa-brands fa-instagram sites-info"></i>Instagram
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="footer-section">
+            <div class="footer-column" id="footer-title">
+                <img src="/assets/images/logo-ecommerce.png" alt="" class="logo-ecommerce">
+                <h2>MYPHONE</h2>
+            </div>
+        </section>
+
+        <section class="footer-section">
+            <div class="footer-column">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="" class="footer-list-link">
+                            <i class="fa-solid fa-envelope sites-info"></i>Correo
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="" class="footer-list-link">
+                            <i class="fa-solid fa-phone sites-info"></i>Telefono
+                        </a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="" class="footer-list-link">
+                            <i class="fa-solid fa-location-dot sites-info"></i>Direccion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/header.js"></script>
+    <script src="/js/initialData.js"></script>
+</body>
+</html>
+
+
+
+
